@@ -14,9 +14,4 @@ document.getElementById("temp").innerHTML = temp;
 document.getElementById("high").innerHTML = high;
 document.getElementById("low").innerHTML = low;
 
-//Consumer key: fn0UlCH65zataX9f8Kf4WxakP
-//Consumer secret: 3bkTTeZXCw9irUopXtYkbt5GZYH6TEqo4o7B9M2XOrqZQ94phs
-//Access token: 3168949561-eSU7ckyxKdmhEyhGolzy72ygK4NjwxWHI7LwvDu
-//Access token secret: ixaR4BTH9Y9tXIpxVlWnT3OAneqnSNZQOjg9AWZ5r3BuC
 
-//Bearer token credentials: 
