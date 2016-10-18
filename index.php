@@ -28,20 +28,15 @@
 		<div id="abajo">
 			<article class="tarjeta">
 				<h3>Tweets</h3>
-				<div id="tweets">
-					
-				</div>
+				<?php include 'curl.php';
+				$user1 = "varop10_alvaro";
+				mostrarTweets($user1);
+				?>
 			</article>
 			<article class="tarjeta">
 				<h3>Avisos</h3>
 				<div id="avisos">
-					<section id="logo">
-						<img src="">
-					</section>
-					<section id="contenido">
-						<p id="cuenta"> <span id="usuario"></span></p>
-						<p id="tweet"></p>
-					</section>
+					
 				</div>
 			</article>
 		</div>
