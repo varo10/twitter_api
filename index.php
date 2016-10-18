@@ -29,8 +29,15 @@
 			<article class="tarjeta">
 				<h3>Tweets</h3>
 				<?php include 'curl.php';
-				$user1 = "varop10_alvaro";
+				$user = "varop10_alvaro";
+				$user1 = "ColimaMunicipio";
+				$user2 = "gobiernocolima";
+				$user3 = "PGR_Col";
+				$user4 = "Volcan_Colima";
 				mostrarTweets($user1);
+				mostrarTweets($user2);
+				mostrarTweets($user3);
+				mostrarTweets($user4);
 				?>
 			</article>
 			<article class="tarjeta">

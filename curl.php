@@ -5,7 +5,7 @@
 function mostrarTweets($user){
 	$key = 'woHHCME4A1k3CayFLPnsWcaGT'; //YOUR_KEY_HERE
 	$secret = 'H8OW8esxt95wSmkOTRIExYuB1haYnlQ8fnW40Wq6VAlwK3Wn6t'; //YOUR_SECRET_HERE
-	$api_endpoint = 'https://api.twitter.com/1.1/users/show.json?screen_name='.$user; // endpoint must support "Application-only authentication"
+	$api_endpoint = 'https://api.twitter.com/1.1/users/show.json?screen_name='.$user.'&count=2'; // endpoint must support "Application-only authentication"
 
 	// request token
 	$basic_credentials = base64_encode($key.':'.$secret);
@@ -29,7 +29,7 @@ function mostrarTweets($user){
 		//return $data;
 		//echo $data;
 		$info = json_decode($data);
-		$tweet = $info->text;
+		$tweet = $info->status->text;
 		echo "<div id='tweets'>
 				  <section id='logo'>
 					<img src=''>
@@ -38,8 +38,9 @@ function mostrarTweets($user){
 					<p id='cuenta'> <span id='usuario'></span></p>
 					<p id='tweet'>".$tweet ."</p>
 				  </section>
-			</div>";
-		echo $data;
+			</div>
+			<br />";
+		//echo $data;
 	}
 }
 ?>
