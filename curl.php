@@ -3,8 +3,8 @@
 * using curl
 */
 function mostrarTweets($user){
-	$key = 'woHHCME4A1k3CayFLPnsWcaGT'; //YOUR_KEY_HERE
-	$secret = 'H8OW8esxt95wSmkOTRIExYuB1haYnlQ8fnW40Wq6VAlwK3Wn6t'; //YOUR_SECRET_HERE
+	$key = 'fn0UlCH65zataX9f8Kf4WxakP'; //YOUR_KEY_HERE
+	$secret = '3bkTTeZXCw9irUopXtYkbt5GZYH6TEqo4o7B9M2XOrqZQ94phs'; //YOUR_SECRET_HERE
 	$api_endpoint = 'https://api.twitter.com/1.1/users/show.json?screen_name='.$user.'&count=2'; // endpoint must support "Application-only authentication"
 
 	// request token
